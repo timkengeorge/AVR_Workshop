@@ -1,0 +1,21 @@
+How to Configure AvrDude(Programmer) to AVR Studio :
+===========================================================
+First you need to copy the "avrdude.conf" and "avrdude.exe" files into the C:\ drive
+(Dont put them in folders,just paste inside C:\ or else change Command accordingly)
+
+Open Avr Studio...
+Goto:  Tools -> External Tools
+Click: Add -> Insert the following in respective columns
+       Title:	    Program
+       Command:     C:\avrdude.exe
+       Arguments:   -c usbasp -p atmega8 -U flash:w:"$(ItemDir)Debug\$(ItemFileName).hex":a -q	
+Select: "Use Output window"
+Click: Apply -> OK
+
+Now a new Tool named 'Program' appears inside Tools menu.
+Use this to Burn your pgm directly into DevBoard
+
+*************************************************************
+***********|  		  STARK-LABZ 		 |***********
+***********|   	      WWW.Starklabz.com   	 |***********
+*************************************************************
