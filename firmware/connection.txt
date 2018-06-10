@@ -1,0 +1,12 @@
+atmega8
+=====================
+D+       Port D2 (4)
+D-       Port D4 (6)
+Jumper   Port D3 (5)
+
+fuse (12Mhz)
+======
+lf: 3F
+hf: C0
+
+lock: 3F
